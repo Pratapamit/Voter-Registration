@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>National Voters Services Demo Portal</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 
+	<link rel="stylesheet" type="text/css" href="C:\Users\dell\Desktop\Internship\VoterForm\VoterForm.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ -->
+	<!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+
+	<style type="text/css">
+		
+
+#india{
+	transform: scale(.4);
+	margin-top: -35px;
+	margin-left: -60px;
+	cursor: pointer;
+}
+
+#vote{
+	width: 120px;
+	height: 60px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 19px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#nav{
+	width: 100vw;
+	height: 100px;
+	background-color: #2a2b2b;	
+	
+}
+
+.p1{
+	position: absolute;
+	color: white;
+	margin-top: -125px;
+	margin-left: 20%;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.p2{
+	position: absolute;
+	color: white;
+	margin-top: -125px;
+	margin-left: 50%;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+#section{
+	border: 1px solid gray;
+	height: 40px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#section>button{
+	width: 70px;
+	margin-left: 30px;
+	margin-top: 10px;
+	float: left;
+	background-color: #c1c1c1;
+	cursor: pointer;
+}
+
+#section>button:hover{
+	background-color: #0000ff;
+}
+
+#section>select:hover{
+	background-color: #b3b3b3;
+}
+
+#section>p{	
+	margin-left: 75%;
+}
+
+#section>select{
+	float: right;
+	margin-top: -38px;
+	margin-right: 30px;
+	background-color: #c1c1c1;
+}
+
+.note{
+	font-size: 30px;
+	color: #990000;
+	font-weight: bold;
+	margin-left:80px;
+}
+
+.note>b{
+	color: red;
+}
+
+#formSection{
+	border: 1px solid black;
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 3770px;
+	margin-top: -20px;
+	background-color:  #e6e6e6;
+}
+
+.firstDiv{
+	background-color: #bfbfbf;
+	height: 60px;
+	margin-top: 5px;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.secondDiv{
+	background-color: #ff8080;
+	height: 80px;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+.one{
+	margin-left: 12px;
+	line-height: 50px;
+}
+
+.two{
+	margin-left: 100px
+
+}
+
+.twop1{
+	margin-top: -5px;
+}
+
+.twob1{
+	position: relative;
+	top: -40px;
+	left: 50px;
+	padding: 5px;
+	background-color: #808080;
+	color: white;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.twob1:hover{
+	background-color: #737373;
+}
+
+.twop1>b{
+	color: red;
+	position: relative;
+	top: -3px;
+}
+
+
+.twop2{
+	margin-top: -65px;
+	margin-left: 25%;
+}
+
+.twob2{
+	position: relative;
+	top: -40px;
+	left: 32%;
+	padding: 5px;
+	background-color: #808080;
+	color: white;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.twob2:hover{
+	background-color: #737373;
+}
+
+
+.twop3{
+	margin-top: -15px;
+}
+
+.twob3{
+	position: relative;
+	top: -55px;
+	left: 27%;
+	padding: 5px;
+	background-color: #808080;
+	color: white;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.twob3:hover{
+	background-color: #737373;
+}
+
+.twop3>b{
+	color: red;
+}
+
+.three{
+	margin-left: 20px;
+	margin-top: -10px;
+}
+
+.threer1{
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+.threer2{
+	margin-left: 100px;
+	position: relative;
+	top: -50px;
+}
+
+.threep1{
+	position: relative;
+	margin-left: 12%;
+	top: -35px;
+}
+
+.threep2{
+	position: relative;
+	margin-left: 12%;
+	top: -85px;
+}
+
+
+.four{
+	margin-left: 20px;
+}
+
+.five{
+	background-color: #ff8080;
+	height: 40px;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+
+.six{
+	margin-left: 100px;
+}
+
+.six>p{
+	margin-top: 50px;
+}
+
+.six>p>b{
+	color: red;
+}
+
+.sixinput1{
+	margin-left: 9%;
+	position: relative;
+	top: -45px;
+	text-align: center;
+}
+
+.sixinput2{
+	position: relative;
+	top: -45px;
+	margin-left: 1%;
+	text-align: center;
+}
+
+.six>button{
+	position: relative;
+	top: -44px;
+	left: 4%;
+	width: 70px;
+	height: 35px;
+	font-size: 18px;
+	background-color: #595959;
+}
+
+
+.seven{
+	margin-left: 100px;
+	margin-top: -20px;
+}
+
+.seven>p>b{
+	color: red;
+}
+
+.seveninput1{
+	margin-left: 15%;
+	position: relative;
+	top: -45px;
+	text-align: center;
+}
+
+.seveninput2{
+	position: relative;
+	top: -45px;
+	margin-left: 1%;
+	text-align: center;
+}
+
+.seven>button{
+	position: relative;
+	top: -44px;
+	left: 4%;
+	width: 70px;
+	height: 35px;
+	font-size: 18px;
+	background-color:   #595959;
+}
+
+
+
+.eight{
+	margin-left: 100px;
+	margin-top: -20px;
+}
+
+.eight>p>b{
+	color: red;
+}
+
+.eightinput1{
+	margin-left: 26%;
+	position: relative;
+	top: -45px;
+	text-align: center;
+}
+
+.eightinput2{
+	position: relative;
+	top: -45px;
+	margin-left: 1%;
+	text-align: center;
+}
+
+.eight>button{
+	position: relative;
+	top: -44px;
+	left: 4%;
+	width: 70px;
+	height: 35px;
+	font-size: 18px;
+	background-color:   #595959;
+}
+
+
+.nine{
+	margin-left: 100px;
+	margin-top: -20px;
+}
+
+.nine>p>b{
+	color: red;
+}
+
+.nineb{
+	position: relative;
+	left: 21%;
+	top: -40px;
+	background-color: #737373;
+	padding: 5px;
+	color: white;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.nineb:hover{
+	background-color:#595959;
+}
+
+
+.ten{
+	margin-left: 100px;
+	margin-top: -20px;
+}
+
+.ten>p>b{
+	color: red;
+}
+
+.teninput1{
+	margin-left: 26%;
+	position: relative;
+	top: -45px;
+	text-align: center;
+}
+
+.teninput2{
+	position: relative;
+	top: -45px;
+	margin-left: 1%;
+	text-align: center;
+}
+
+.ten>button{
+	position: relative;
+	top: -44px;
+	left: 4%;
+	width: 70px;
+	height: 35px;
+	font-size: 18px;
+	background-color:   #595959;
+}
+
+
+.one2{
+	margin-left: 100px;
+	margin-top: -20px;
+}
+
+.one2>p>b{
+	color: red;
+}
+
+.one2p{
+	width: 140px;
+	border: 1px solid black;
+	padding-left: 5px;
+	position: relative;
+	top: -35px;
+	left: 35.5%;
+}
+.one2b1{
+	position: relative;
+	top: -79px;
+	left: 52%;
+	width: 70px;
+	height: 35px;
+	font-size: 16px;
+	background-color: #595959;
+	color: white;
+}
+
+.one2b2{
+	position: relative;
+	top: -79px;
+	left: 52%;
+	width: 80px;
+	height: 35px;
+	font-size: 16px;
+	background-color: #595959;
+	color: white;
+}
+
+
+.one3{
+	margin-left: 100px;
+	margin-top: -40px;
+}
+
+.one3>p>b{
+	color: red;
+}
+
+.one3p{
+	width: 140px;
+	border: 1px solid black;
+	padding-left: 5px;
+	position: relative;
+	top: -52px;
+	left:47%;
+}
+
+.or{
+	position: relative;
+	top: -13px;
+	font-size: 20px;
+}
+
+
+.one4{
+	margin-left: 100px;
+}
+
+.one4>p>b{
+	color: red;
+}
+
+.one4b{
+    position: relative;
+	left: 17%;
+	top: -40px;
+	padding: 5px;
+	color: white;
+	background-color: #737373;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.one4b:hover{
+	background-color:#595959;
+}
+
+.three2{
+	background-color: #ff8080;
+	height: 40px;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+
+
+.three3{
+	margin-left: 100px;
+}
+
+.three3>p{
+	margin-top: 50px;
+}
+
+.three3>p>b{
+	color: red;
+}
+
+.three3input1{
+	margin-left: 9%;
+	position: relative;
+	top: -45px;
+	text-align: center;
+}
+
+.three3input2{
+	position: relative;
+	top: -45px;
+	margin-left: 1%;
+	text-align: center;
+}
+
+.three3>button{
+	position: relative;
+	top: -44px;
+	left: 4%;
+	width: 70px;
+	height: 35px;
+	font-size: 18px;
+	background-color:   #595959;
+}
+
+
+.three4{
+	margin-left: 100px;
+	margin-top: -50px;
+}
+
+.three4>p{
+	margin-top: 50px;
+}
+
+.three4>p>b{
+	color: red;
+}
+
+.three4input1{
+	margin-left: 17%;
+	position: relative;
+	top: -45px;
+	text-align: center;
+}
+
+.three4input2{
+	position: relative;
+	top: -45px;
+	margin-left: 1%;
+	text-align: center;
+}
+
+.three4>button{
+	position: relative;
+	top: -44px;
+	left: 4%;
+	width: 70px;
+	height: 35px;
+	font-size: 18px;
+	background-color:   #595959;
+}
+
+
+.three5{
+	margin-left: 100px;
+	margin-top: -50px;
+}
+
+.three5>p{
+	margin-top: 50px;
+}
+
+.three5>p>b{
+	color: red;
+}
+
+.three5input1{
+	margin-left: 12%;
+	position: relative;
+	top: -45px;
+	text-align: center;
+}
+
+.three5input2{
+	position: relative;
+	top: -45px;
+	margin-left: 1%;
+	text-align: center;
+}
+
+.three5>button{
+	position: relative;
+	top: -44px;
+	left: 4%;
+	width: 70px;
+	height: 35px;
+	font-size: 18px;
+	background-color:   #595959;
+}
+
+
+.three6{
+	margin-left: 100px;
+	margin-top: -50px;
+}
+
+.three6>p{
+	margin-top: 50px;
+}
+
+.three6>p>b{
+	color: red;
+}
+
+.three6input1{
+	margin-left: 10%;
+	position: relative;
+	top: -45px;
+	text-align: center;
+}
+
+.three6input2{
+	position: relative;
+	top: -45px;
+	margin-left: 1%;
+	text-align: center;
+}
+
+.three6>button{
+	position: relative;
+	top: -44px;
+	left: 4%;
+	width: 70px;
+	height: 35px;
+	font-size: 18px;
+	background-color:   #595959;
+}
+
+
+.three7{
+	margin-left: 100px;
+	margin-top: -50px;
+}
+
+.three7>p{
+	margin-top: 50px;
+}
+
+.three7>p>b{
+	color: red;
+}
+
+.three7input1{
+	margin-left: 9%;
+	position: relative;
+	top: -38px;
+	text-align: center;
+}
+
+.three8{
+	margin-left: 100px;
+	margin-top: -50px;
+}
+
+.three8>p{
+	margin-top: 50px;
+}
+
+.three8>p>b{
+	color: red;
+}
+
+.three8b{
+	position: relative;
+	top: -40px;
+	left: 18%;
+	padding: 5px;
+	color: white;
+	background-color: #737373;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.three8b:hover{
+	background-color:#595959;
+}
+
+
+.three9{
+	margin-left: 100px;
+	margin-top: -50px;
+}
+
+.three9>p{
+	margin-top: 50px;
+}
+
+.three9>p>b{
+	color: red;
+}
+
+.three9b{
+	position: relative;
+	top: -40px;
+	left: 7.5%;
+	padding: 5px;
+	color: white;
+	background-color: #737373;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.three9b:hover{
+	background-color:#595959;
+}
+
+
+.four1{
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	height: 110px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.four1>p{
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.four1>input{
+	margin-left: 29%;
+	position: relative;
+	top: -37px;
+	text-align: center;
+}
+
+.four2{
+	background-color: #ff8080;
+	height: 40px;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+.five2p,.five2i{
+	margin-left: 100px;
+	margin-top: 30px;
+}
+
+.six2{
+	margin-left: 100px;
+	margin-top: 40px;
+}
+
+.six3{
+	margin-left: 100px;
+	position: relative;
+	top: -35px;
+	left: 16%;
+}
+
+.six2b{
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+.six3b{
+	margin-left: 100px;
+	position: relative;
+	top: -35px;
+	left: 19%;
+}
+
+.seven2b{
+	background-color: #ff8080;
+	height: 40px;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+.seven2b>a{
+	margin-left: 5%;
+	text-decoration: none;
+}
+
+
+.seven3{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+.seven4{
+	margin-left: 100px;
+	position: relative;
+	top: -18px;
+}
+
+.seven5{
+	margin-left: 100px;
+	position: relative;
+	top: -115px;
+}
+
+
+.seven3>b{
+	color: red;
+}
+
+.file1{
+	margin-left: 100px;
+	border: 1px solid black;
+	width: 100px;
+	position: relative;
+	top: -10px;
+}
+
+.seven4>b{
+	color: red;
+}
+
+.file2{
+	margin-left: 100px;
+	border: 1px solid black;
+	width: 100px;
+	position: relative;
+	top: -28px;
+}
+
+.seven5>b{
+	color: red;
+}
+
+.file3{
+	margin-left: 100px;
+	border: 1px solid black;
+	width: 100px;
+	position: relative;
+	top: -125px;
+}
+
+
+.seven6{
+	position: relative;
+	left: 50%;
+	top: -66px;
+}
+
+.seven6>b{
+	color: red;
+}
+
+.seven6b{
+	position: relative;
+	top: -105px;
+	left: 61%;
+	padding: 5px;
+	color: white;
+	background-color: #737373;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.seven6b:hover{
+	background-color:#595959;
+}
+
+
+.seven7{
+	position: relative;
+	left: 50%;
+	top: -162px;
+}
+
+.seven7>b{
+	color: red;
+}
+
+.seven7b{
+	position: relative;
+	top: -203px;
+	left: 61%;
+	padding: 5px;
+	background-color: #595959;
+	color: white;
+	background-color: #737373;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.seven7b:hover{
+	background-color:#595959;
+}
+
+
+.eight2b{
+	background-color: #ff8080;
+	height: 40px;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+	margin-top: -140px;
+}
+
+
+.eight3b{
+	margin-left: 12px;
+	margin-top: 40px;
+}
+
+.eight4b{
+	margin-left: 100px;
+}
+
+.eight4b>input{
+	margin-left: 2%;
+}
+
+
+.eight5b{
+	position: relative;
+	left: 100px;
+	top: 15px;
+}
+
+.eight5b>b{
+	color: red;
+}
+
+.eight6b{
+	position: relative;
+	top: -26px;
+	left: 18%;
+	padding: 5px;
+	color: white;
+	background-color: #737373;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.eight6b:hover{
+	background-color:#595959;
+}
+
+
+.eight7b{
+	position: relative;
+	left: 30%;
+	top: -65px;
+}
+
+.eight7b>b{
+	color: red;
+}
+
+.eight8b{
+	position: relative;
+	top: -107px;
+	left: 36%;
+	padding: 5px;
+	color: white;
+	background-color: #737373;
+	width: 60px;
+	text-align: center;
+	cursor: default;
+}
+.eight8b:hover{
+	background-color:#595959;
+}
+
+
+.eight9b{
+	position: relative;
+	left: 100px;
+	top: -100px;
+}
+
+.eight9b>b{
+	color: red;
+}
+
+.tenb{
+	position: relative;
+	left: 20px;
+	top: -100px;
+	line-height: 50px;
+}
+
+
+.ten10{
+	margin-left: 100px;
+	position: relative;
+	top: -100px;
+}
+
+#ten10{
+	font-size: 20px;
+}
+
+.ten11{
+	border-top: 1px solid gray;
+	margin-left: 20px;
+	margin-right: 20px;
+	position: relative;
+	top: -25px;
+}
+
+.ten12{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+.ten12>input{
+	margin-left: 1%;
+	
+}
+
+.ten12>b{
+	color: red;
+}
+
+.ten13{
+	position: relative;
+	top: -38px;
+	left: 40%;
+}
+
+.ten14{
+	border-radius: 2px;
+	width: 150px;
+	position: relative;
+	left: 44%;
+	top: -72px;
+	background-color: white;
+}
+
+.ten15{
+	margin-left: 20px;
+	margin-top: -50px;
+}
+
+.captcha{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+.captchaImg{
+	transform: scale(.5);
+	width: 250px;
+	height: 80px;
+	background-color: white;
+	border: 1px solid black;
+	position: relative;
+	top: -66px;
+	left: 9%;
+}
+
+#refresh{
+	position: relative;
+	top: -95px;
+	left: 3%;
+	cursor: pointer;
+}
+
+#refresh>input{
+	position: relative;
+	top: -8px;
+	left: 10%;
+}
+
+.reset{
+	background-color: #47d147;
+	color: white;
+	padding: 8px;
+	width: 60px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.submit{
+	background: #47d147;
+	color: white;
+	padding: 8px;
+	width: 70px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.footer{
+	background-color: #070707;
+	height: 80px;
+	margin-top: -10px;
+}
+
+.footer>p{
+	color: gray;
+	text-align: center;
+	position: relative;
+	top: 32px;
+}
+
+.submit:hover{
+	filter: brightness(70%);
+}
+
+.reset:hover{
+	filter: brightness(70%);
+}
+
+button{
+	cursor: pointer;
+}
+	</style>
+
+
+</head>
+
+<body lang="en">
+<nav id="nav">
+<img src="india.png" id="india">
+<p lang="hi" class="p1"> राष्ट्रीय मतदान सेवा<br> डेमो पोर्टल</p>
+<p class="p2">NATIONAL VOTERS' SERVICES<br> DEMO PORTAL</p>
+<img src="vote.png" id="vote">
+</nav>
+
+<section id="section">
+	<button class="a">A+</button>
+	<button class="a-">A-</button>
+	<p>Select Language</p>
+	<select class="select">
+		<option>Hindi</option>
+		<option>English</option>
+	</select>
+</section>
+
+<p class="note">Note: Fields marked with asterisks ( <b>*</b> ) are mandatory</p>
+
+
+<form id="formSection">
+	<div class="firstDiv">
+		<b>Type 6<br>
+[See rule 13(1) and 26]</b>
+	</div>
+	<div class="secondDiv">
+		Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other<br> constituency from any one constituency
+	</div>
+
+<p class="one">In service<br>
+Electoral Registration Officer,</p>
+
+<div class="two">
+	<p class="twop1">State <b>*</b></p>
+	<div class="twob1">Select <i class='fas fa-angle-down'></i></div>
+	<p class="twop2">District</p>
+	<div class="twob2">Select <i class='fas fa-angle-down'></i></div>
+	<p class="twop3">Legislative Assembly / Parlimentary <br>
+		constituency <b>*</b></p>
+	<div class="twob3">Select <i class='fas fa-angle-down'></i></div>
+</div>
+
+<p class="three">I request that my name be included in electoral rolls for all the aforesaid areas.</p>
+
+<input type="radio" name="1" class="threer1"><p class="threep1"> First time voter
+</p>
+
+<input type="radio" name="1" class="threer2"><p class="threep2"> Due to transfer from other meeting areas.
+</p>
+	
+<p class="four">Below are specifications in support of my claim to be included in the electoral rolls.</p>	
+
+
+<div class="five">Mandatory specifications</div>
+
+<div class="six">
+<p>(A) Name <b>*</b></p>
+<input type="text" name="" placeholder="In English" class="sixinput1" required="true">
+<input type="text" name="" placeholder="In Regional" class="sixinput2" required="true">
+<button type="submit"> <i class='fas fa-keyboard'></i></button>
+</div>
+
+<div class="seven">
+<p>(B) Surname if any <b>*</b></p>
+<input type="text" name="" placeholder="In English" class="seveninput1" required="true">
+<input type="text" name="" placeholder="In Regional" class="seveninput2" required="true">
+<button type="submit"> <i class='fas fa-keyboard'></i></button>
+</div>
+
+<div class="eight">
+<p>(C) Name of the applicant's relative <b>*</b></p>
+<input type="text" name="" placeholder="In English" class="eightinput1" required="true">
+<input type="text" name="" placeholder="In Regional" class="eightinput2" required="true">
+<button type="submit"> <i class='fas fa-keyboard'></i></button>
+</div>
+
+<div class="ten">
+<p>Nickname of the applicant's relative <b>*</b></p>
+<input type="text" name="" placeholder="In English" class="teninput1" required="true">
+<input type="text" name="" placeholder="In Regional" class="teninput2" required="true">
+<button type="submit"> <i class='fas fa-keyboard'></i></button>
+</div>
+
+<div class="nine">
+<p>(D) Type of the relationship <b>*</b></p>
+<div class="nineb">Select <i class='fas fa-angle-down'></i></div>
+</div>
+
+<div class="one2">
+<p><input type="radio" name="">	
+(E) Age [on January 1 of the current calender] <b>*</b></p>
+<p class="one2p">2019</p>
+<button class="one2b1">Year <i class='fas fa-angle-down'></i></button>
+<button class="one2b2">Month <i class='fas fa-angle-down'></i></button>
+</div>
+
+<div class="one3">
+<p class="or">Or</p>
+
+<p><input type="radio" name="">	
+(F) Date of birth (in the form of day/ month/ year) 
+dd-mm-yyyy<br>
+(if known) <b>*</b></p>
+<p class="one3p">dd-mm-yyy</p>
+</div>
+
+
+<div class="one4">
+<p>(G) Applicant's gende <b>*</b></p>
+<div class="one4b">Select <i class='fas fa-angle-down'></i></div>
+</div>
+
+
+<div class="three2">(H) Current address, whose applicant is nominally resident</div>
+
+<div class="three3">
+<p>House no. <b>*</b></p>
+<input type="text" name="" placeholder="(In English)" class="three3input1" required="true">
+<input type="text" name="" placeholder="(In Regional)" class="three3input2" required="true">
+<button type="submit"> <i class='fas fa-keyboard'></i></button>
+</div>
+
+<div class="three4">
+<p>Street / area / location <b>*</b></p>
+<input type="text" name="" placeholder="(In English)" class="three4input1" required="true">
+<input type="text" name="" placeholder="(In Regional)" class="three4input2" required="true">
+<button type="submit"> <i class='fas fa-keyboard'></i></button>
+</div>
+
+<div class="three5">
+<p>City / Village:  <b>*</b></p>
+<input type="text" name="" placeholder="(In English)" class="three5input1" required="true">
+<input type="text" name="" placeholder="(In Regional)" class="three5input2" required="true">
+<button type="submit"> <i class='fas fa-keyboard'></i></button>
+</div>
+
+<div class="three6">
+<p>Post Office <b>*</b></p>
+<input type="text" name="" placeholder="(In English)" class="three6input1" required="true">
+<input type="text" name="" placeholder="(In Regional)" class="three6input2" required="true">
+<button type="submit"> <i class='fas fa-keyboard'></i></button>
+</div>
+
+<div class="three7">
+<p>Pin Code  <b>*</b></p>
+<input type="text" class="three7input1">
+</div>
+
+<div class="three8">
+<p>State / Union Territory <b>*</b></p>
+<div class="three8b">Select <i class='fas fa-angle-down'></i></div>
+</div>
+
+<div class="three9">
+<p>District  <b>*</b></p>
+<div class="three9b">Select <i class='fas fa-angle-down'></i></div>
+</div>
+
+
+<div class="four1">
+	<p>Family / Neighbour Epic No.</p>
+<input type="text" class="three7input1">
+</div>
+
+
+<div class="four2">Optional specialties</div>
+
+<p class="five2p">(T) Disability (if any)</p>
+<input type="checkbox" name="Visual impairment" class="five2i">
+<label for="Visual impairment">Visual impairment</label>
+<input type="checkbox" name="Speech and hearing impairment">
+<label for="Speech and hearing impairment">Speech and hearing impairment</label>
+<input type="checkbox" name="Motion disabling">
+<label for="Motion disabling">Motion disabling</label>
+<input type="checkbox" name="other">
+<label for="other">other</label>
+<input type="text" name="">
+
+
+<p  class="six2">(Th) Email ID (optional)</p>
+<input type="text" name="" class="six3">
+
+<p class="six2b">(D) mobile number (optional)</p>
+<p class="six3b">+91 <input type="text"></p>
+
+<div class="seven2b">Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
+<a href="#">List of supported documents  </a></div>
+
+           
+<p class="seven3">Your photo<b>*</b></p>
+<span class="file1"><input type="file" name=""></span>
+
+<p class="seven4">Age proof<b>*</b></p>
+<span class="file2"><input type="file" name=""></span>
+
+<p class="seven6">Document type<b>*</b></p>
+<div class="seven6b">Select <i class='fas fa-angle-down'></i></div>
+
+<p class="seven5">Address proof<b>*</b></p>
+<span class="file3"><input type="file" name=""></span>
+
+<p class="seven7">Document type<b>*</b></p>
+<div class="seven7b">Select <i class='fas fa-angle-down'></i></div>
+
+
+<div class="eight2b">Declaration</div>
+
+<p class="eight3b">I declare I declare that according to my best knowledge and belief<br>I am a citizen of India and of my birth;</p>
+
+<p class="eight4b">City / Village <input type="text" name=""></p>
+
+
+<p class="eight5b">Select State<b>*</b></p>
+<div class="eight6b">Select <i class='fas fa-angle-down'></i></div>
+
+<p class="eight7b">District<b>*</b></p>
+<div class="eight8b">Select <i class='fas fa-angle-down'></i></div>
+
+<p class="eight9b">Date<b>*</b> <input type="text" name="" placeholder="dd-mm-yyy"></p>
+
+<p class="tenb">(ii) I am a nominally resident in the address given in the above (date, month, year) above;<br>
+
+I have not applied to include my name in the electoral roll for any other constituency;</p>
+
+<p class="ten10"><input type="radio" name="">(iv) My name has not been already included in the electoral roll for this or any other assembly / parliamentary constituency</p>
+
+<p class="ten10" id="ten10">Or</p>
+
+<p class="ten10"><input type="radio" name=""> My name would have been included in electoral rolls of the State's constituency, in which I was already residing in the address mentioned below, and if so, then I request that it be removed from that electoral roll. Go.</p>
+
+<div class="ten11"></div>
+
+<p class="ten12">Location<b>*</b> <input type="text" name=""></p>
+<p class="ten13">Date</p>
+<p class="ten14">dd-mm-yyy</p>
+
+<p class="ten15">I am afraid that the statement or declaration, which is false, to whom I know it or believe that it is false or I do not believe in being true, the People's Representation Act, 1950 (43 of 1950 ) Is punishable under section 31</p>
+
+<p class="captcha">Captch</p>
+<img src="captcha.png" class="captchaImg">
+<i class="material-icons" id="refresh">&#xe5d5; <input type="text" name=""> </i>
+
+<button type="reset" class="reset">Reset</button>
+<button type="submit" class="submit">Submit</button>
+</form>
+
+<footer class="footer">
+	<p>Copyright © 2019 Suven Consultants and Technology Pvt. Ltd.</p>
+</footer>
+
+</body>
+</html>
